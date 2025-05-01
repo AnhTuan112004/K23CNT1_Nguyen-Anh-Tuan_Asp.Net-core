@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "GetAllNatProducts";
+}
+
+<h2>DANH SÁCH SẢN PHẨM</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td>Mã sản phẩm</td>
+            <td>Tên sản phẩm</td>
+            <td>Năm sản xuất</td>
+            <td>Giá</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in ViewBag.products)
+        {
+            <tr>
+                <td>@p.NatProductId</td>
+                <td>@p.NatProductName</td>
+                <td>@p.NatYearRelease</td>
+                <td>$@p.NatPrice</td>
+            </tr>
+        }
+    </tbody>
+</table>

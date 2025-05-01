@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "GetNatProduct";
+}
+
+<h2>Dữ liệu lấy ra từ ViewBag</h2>
+<p>Mã sản phẩm: @ViewBag.NatProduct.NatProductId</p>
+<p>Tên sản phẩm: @ViewBag.NatProduct.NatProductName</p>
+<p>Năm sản xuất: @ViewBag.NatProduct.NatYearRelease</p>
+<p>Giá: @ViewBag.NatProduct.NatPrice</p>
+
+<h2>Dữ liệu lấy ra từ ViewData</h2>
+@{
+    var Natproduct = ViewData["NatProductVD"] as Natlesson2.Models.NatProduct;
+}
+<p>Mã sản phẩm: @Natproduct.NatProductId</p>
+<p>Tên sản phẩm: @Natproduct.NatProductName</p>
+<p>Năm sản xuất: @Natproduct.NatYearRelease</p>
+<p>Giá: @Natproduct.NatPrice</p>
+
+
