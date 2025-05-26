@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Thông tin sinh viên";
+}
+
+<h2 class="mt-3 mb-4">Thông tin sinh viên</h2>
+
+<ul class="list-group" style="max-width: 400px;">
+    <li class="list-group-item"><strong>Mã số sinh viên:</strong> @ViewBag.Id</li>
+    <li class="list-group-item"><strong>Họ và tên:</strong> @ViewBag.Name</li>
+    <li class="list-group-item"><strong>Lớp:</strong> @ViewBag.Class</li>
+</ul>
+
+<br />
+
+<a class="btn btn-secondary mt-3" asp-action="NatIndex" asp-controller="NatHome">Quay lại trang chủ</a>

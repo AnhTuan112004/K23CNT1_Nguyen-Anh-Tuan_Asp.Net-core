@@ -1,18 +1,20 @@
 ﻿@model NatLap06.Models.NatEmployee
 
 @{
-    ViewData["Title"] = "Thêm mới nhân viên";
+    ViewData["Title"] = "Chỉnh sửa nhân viên";
 }
 
-<h2>Thêm mới nhân viên</h2>
+<h2>Chỉnh sửa nhân viên</h2>
 
-<form asp-action="NatCreateSubmit" method="post">
-    <div asp-validation-summary="ModelOnly" class="text-danger"></div>  <!-- Hiển thị tổng lỗi -->
+<form asp-action="NatEditSubmit" method="post">
+    <input type="hidden" asp-for="NatId" />
+
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
     <div class="form-group">
         <label asp-for="NatName"></label>
         <input asp-for="NatName" class="form-control" />
-        <span asp-validation-for="NatName" class="text-danger"></span>  <!-- Hiển thị lỗi riêng từng trường -->
+        <span asp-validation-for="NatName" class="text-danger"></span>
     </div>
 
     <div class="form-group">
@@ -45,7 +47,8 @@
     </div>
 
     <br />
-    <button type="submit" class="btn btn-success">Lưu</button>
+    <button type="submit" class="btn btn-success">Lưu thay đổi</button>
+    <a href="/NatEmployee/NatIndex" class="btn btn-secondary">Quay lại</a>
 </form>
 
 @section Scripts {

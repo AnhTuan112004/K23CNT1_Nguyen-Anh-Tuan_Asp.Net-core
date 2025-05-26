@@ -1,19 +1,21 @@
-﻿@model List<NatLab06.Models.NatEmployee>
+﻿@model List<NatLap06.Models.NatEmployee>
 @{
     ViewData["Title"] = "Danh sách nhân viên";
 }
+
 <h2>Danh sách nhân viên</h2>
-<a href="/NatEmployee/NatCreate" class="btn btn-primary mb-2">Thêm nhân viên</a>
+
 <table class="table table-bordered">
     <thead>
         <tr>
             <th>ID</th>
-            <th>Tên</th>
+            <th>Họ tên</th>
             <th>Ngày sinh</th>
             <th>Email</th>
             <th>Điện thoại</th>
             <th>Lương</th>
             <th>Trạng thái</th>
+            <th>Hành động</th>
         </tr>
     </thead>
     <tbody>
@@ -22,12 +24,19 @@
             <tr>
                 <td>@emp.NatId</td>
                 <td>@emp.NatName</td>
-                <td>@emp.NatBirthDay.ToShortDateString()</td>
+                <td>@emp.NatBirthDay.ToString("dd/MM/yyyy")</td>
                 <td>@emp.NatEmail</td>
                 <td>@emp.NatPhone</td>
-                <td>@emp.NatSalary</td>
+                <td>@emp.NatSalary.ToString("N0")</td>
                 <td>@(emp.NatStatus ? "Đang làm" : "Nghỉ")</td>
+                <td>
+                    <a class="btn btn-sm btn-warning" asp-action="NatEdit" asp-route-id="@emp.NatId">Sửa</a>
+                    <a class="btn btn-sm btn-danger" asp-action="NatDelete" asp-route-id="@emp.NatId"
+                       onclick="return confirm('Bạn có chắc chắn muốn xóa nhân viên này không?');">Xóa</a>
+                </td>
             </tr>
         }
     </tbody>
 </table>
+
+<a class="btn btn-primary" asp-action="NatCreate">Thêm mới nhân viên</a>

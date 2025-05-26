@@ -32,16 +32,20 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF0RW1wbG95ZWVcTmF0Q3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/K23CNT1/K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core/NatLap06/NatLap06/Views/NatEmployee/NatEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF0RW1wbG95ZWVcTmF0RWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/K23CNT1/K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core/NatLap06/NatLap06/Views/NatEmployee/NatIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF0RW1wbG95ZWVcTmF0SW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/K23CNT1/K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core/NatLap06/NatLap06/Views/NatHome/NatAbout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF0SG9tZVxOYXRBYm91dC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/K23CNT1/K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core/NatLap06/NatLap06/Views/NatHome/NatIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF0SG9tZVxOYXRJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/K23CNT1/K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core/NatLap06/NatLap06/Views/NatHome/NatInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF0SG9tZVxOYXRJbmZvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/K23CNT1/K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core/NatLap06/NatLap06/Views/NatHome/Privacy.cshtml]
