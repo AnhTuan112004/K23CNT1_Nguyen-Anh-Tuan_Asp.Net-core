@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLesson04\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8A4CAA8E-BB72-4B5C-88CE-337BA2FDC771}|NatLesson04\\NatLesson04.csproj|c:\\k23cnt1\\k23cnt1_nguyen-anh-tuan_asp.net-core\\natlesson04\\natlesson04\\views\\shared\\_footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8A4CAA8E-BB72-4B5C-88CE-337BA2FDC771}|NatLesson04\\NatLesson04.csproj|solutionrelative:natlesson04\\views\\shared\\_footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A4CAA8E-BB72-4B5C-88CE-337BA2FDC771}|NatLesson04\\NatLesson04.csproj|c:\\k23cnt1\\k23cnt1_nguyen-anh-tuan_asp.net-core\\natlesson04\\natlesson04\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8A4CAA8E-BB72-4B5C-88CE-337BA2FDC771}|NatLesson04\\NatLesson04.csproj|solutionrelative:natlesson04\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A4CAA8E-BB72-4B5C-88CE-337BA2FDC771}|NatLesson04\\NatLesson04.csproj|c:\\k23cnt1\\k23cnt1_nguyen-anh-tuan_asp.net-core\\natlesson04\\natlesson04\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A4CAA8E-BB72-4B5C-88CE-337BA2FDC771}|NatLesson04\\NatLesson04.csproj|solutionrelative:natlesson04\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A4CAA8E-BB72-4B5C-88CE-337BA2FDC771}|NatLesson04\\NatLesson04.csproj|c:\\k23cnt1\\k23cnt1_nguyen-anh-tuan_asp.net-core\\natlesson04\\natlesson04\\views\\nathome\\natabout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8A4CAA8E-BB72-4B5C-88CE-337BA2FDC771}|NatLesson04\\NatLesson04.csproj|solutionrelative:natlesson04\\views\\nathome\\natabout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A4CAA8E-BB72-4B5C-88CE-337BA2FDC771}|NatLesson04\\NatLesson04.csproj|c:\\k23cnt1\\k23cnt1_nguyen-anh-tuan_asp.net-core\\natlesson04\\natlesson04\\controllers\\nathomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A4CAA8E-BB72-4B5C-88CE-337BA2FDC771}|NatLesson04\\NatLesson04.csproj|solutionrelative:natlesson04\\controllers\\nathomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A4CAA8E-BB72-4B5C-88CE-337BA2FDC771}|NatLesson04\\NatLesson04.csproj|c:\\k23cnt1\\k23cnt1_nguyen-anh-tuan_asp.net-core\\natlesson04\\natlesson04\\views\\nathome\\natindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8A4CAA8E-BB72-4B5C-88CE-337BA2FDC771}|NatLesson04\\NatLesson04.csproj|solutionrelative:natlesson04\\views\\nathome\\natindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A4CAA8E-BB72-4B5C-88CE-337BA2FDC771}|NatLesson04\\NatLesson04.csproj|c:\\k23cnt1\\k23cnt1_nguyen-anh-tuan_asp.net-core\\natlesson04\\natlesson04\\views\\shared\\_natlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8A4CAA8E-BB72-4B5C-88CE-337BA2FDC771}|NatLesson04\\NatLesson04.csproj|solutionrelative:natlesson04\\views\\shared\\_natlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A4CAA8E-BB72-4B5C-88CE-337BA2FDC771}|NatLesson04\\NatLesson04.csproj|c:\\k23cnt1\\k23cnt1_nguyen-anh-tuan_asp.net-core\\natlesson04\\natlesson04\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8A4CAA8E-BB72-4B5C-88CE-337BA2FDC771}|NatLesson04\\NatLesson04.csproj|solutionrelative:natlesson04\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLesson04\\NatLesson04\\Program.cs",
+              "RelativeDocumentMoniker": "NatLesson04\\Program.cs",
+              "ToolTip": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLesson04\\NatLesson04\\Program.cs",
+              "RelativeToolTip": "NatLesson04\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T12:39:11.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NatAbout.cshtml",
+              "DocumentMoniker": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLesson04\\NatLesson04\\Views\\NatHome\\NatAbout.cshtml",
+              "RelativeDocumentMoniker": "NatLesson04\\Views\\NatHome\\NatAbout.cshtml",
+              "ToolTip": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLesson04\\NatLesson04\\Views\\NatHome\\NatAbout.cshtml",
+              "RelativeToolTip": "NatLesson04\\Views\\NatHome\\NatAbout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-18T12:32:22.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NatIndex.cshtml",
+              "DocumentMoniker": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLesson04\\NatLesson04\\Views\\NatHome\\NatIndex.cshtml",
+              "RelativeDocumentMoniker": "NatLesson04\\Views\\NatHome\\NatIndex.cshtml",
+              "ToolTip": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLesson04\\NatLesson04\\Views\\NatHome\\NatIndex.cshtml",
+              "RelativeToolTip": "NatLesson04\\Views\\NatHome\\NatIndex.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-18T12:31:26.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NatHomeController.cs",
+              "DocumentMoniker": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLesson04\\NatLesson04\\Controllers\\NatHomeController.cs",
+              "RelativeDocumentMoniker": "NatLesson04\\Controllers\\NatHomeController.cs",
+              "ToolTip": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLesson04\\NatLesson04\\Controllers\\NatHomeController.cs",
+              "RelativeToolTip": "NatLesson04\\Controllers\\NatHomeController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T12:29:11.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Footer.cshtml",
+              "DocumentMoniker": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLesson04\\NatLesson04\\Views\\Shared\\_Footer.cshtml",
+              "RelativeDocumentMoniker": "NatLesson04\\Views\\Shared\\_Footer.cshtml",
+              "ToolTip": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLesson04\\NatLesson04\\Views\\Shared\\_Footer.cshtml*",
+              "RelativeToolTip": "NatLesson04\\Views\\Shared\\_Footer.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-18T12:24:18.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_NatLayout.cshtml",
+              "DocumentMoniker": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLesson04\\NatLesson04\\Views\\Shared\\_NatLayout.cshtml",
+              "RelativeDocumentMoniker": "NatLesson04\\Views\\Shared\\_NatLayout.cshtml",
+              "ToolTip": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLesson04\\NatLesson04\\Views\\Shared\\_NatLayout.cshtml",
+              "RelativeToolTip": "NatLesson04\\Views\\Shared\\_NatLayout.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-18T12:12:13.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Header.cshtml",
+              "DocumentMoniker": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLesson04\\NatLesson04\\Views\\Shared\\_Header.cshtml",
+              "RelativeDocumentMoniker": "NatLesson04\\Views\\Shared\\_Header.cshtml",
+              "ToolTip": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLesson04\\NatLesson04\\Views\\Shared\\_Header.cshtml",
+              "RelativeToolTip": "NatLesson04\\Views\\Shared\\_Header.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-18T12:18:33.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLesson04\\NatLesson04\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "NatLesson04\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLesson04\\NatLesson04\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "NatLesson04\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-18T12:11:57.577Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

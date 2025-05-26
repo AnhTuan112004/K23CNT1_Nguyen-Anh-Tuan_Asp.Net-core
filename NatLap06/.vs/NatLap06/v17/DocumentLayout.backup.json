@@ -1,0 +1,183 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLap06\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A197D77A-5BD9-4C88-87E9-EF506BC684E2}|NatLap06\\NatLap06.csproj|c:\\k23cnt1\\k23cnt1_nguyen-anh-tuan_asp.net-core\\natlap06\\natlap06\\views\\natemployee\\natcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A197D77A-5BD9-4C88-87E9-EF506BC684E2}|NatLap06\\NatLap06.csproj|solutionrelative:natlap06\\views\\natemployee\\natcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A197D77A-5BD9-4C88-87E9-EF506BC684E2}|NatLap06\\NatLap06.csproj|c:\\k23cnt1\\k23cnt1_nguyen-anh-tuan_asp.net-core\\natlap06\\natlap06\\controllers\\natemployeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A197D77A-5BD9-4C88-87E9-EF506BC684E2}|NatLap06\\NatLap06.csproj|solutionrelative:natlap06\\controllers\\natemployeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A197D77A-5BD9-4C88-87E9-EF506BC684E2}|NatLap06\\NatLap06.csproj|c:\\k23cnt1\\k23cnt1_nguyen-anh-tuan_asp.net-core\\natlap06\\natlap06\\controllers\\nathomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A197D77A-5BD9-4C88-87E9-EF506BC684E2}|NatLap06\\NatLap06.csproj|solutionrelative:natlap06\\controllers\\nathomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A197D77A-5BD9-4C88-87E9-EF506BC684E2}|NatLap06\\NatLap06.csproj|c:\\k23cnt1\\k23cnt1_nguyen-anh-tuan_asp.net-core\\natlap06\\natlap06\\views\\natemployee\\natindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A197D77A-5BD9-4C88-87E9-EF506BC684E2}|NatLap06\\NatLap06.csproj|solutionrelative:natlap06\\views\\natemployee\\natindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A197D77A-5BD9-4C88-87E9-EF506BC684E2}|NatLap06\\NatLap06.csproj|c:\\k23cnt1\\k23cnt1_nguyen-anh-tuan_asp.net-core\\natlap06\\natlap06\\models\\natemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A197D77A-5BD9-4C88-87E9-EF506BC684E2}|NatLap06\\NatLap06.csproj|solutionrelative:natlap06\\models\\natemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A197D77A-5BD9-4C88-87E9-EF506BC684E2}|NatLap06\\NatLap06.csproj|c:\\k23cnt1\\k23cnt1_nguyen-anh-tuan_asp.net-core\\natlap06\\natlap06\\views\\nathome\\natabout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A197D77A-5BD9-4C88-87E9-EF506BC684E2}|NatLap06\\NatLap06.csproj|solutionrelative:natlap06\\views\\nathome\\natabout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A197D77A-5BD9-4C88-87E9-EF506BC684E2}|NatLap06\\NatLap06.csproj|c:\\k23cnt1\\k23cnt1_nguyen-anh-tuan_asp.net-core\\natlap06\\natlap06\\views\\shared\\_natlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A197D77A-5BD9-4C88-87E9-EF506BC684E2}|NatLap06\\NatLap06.csproj|solutionrelative:natlap06\\views\\shared\\_natlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A197D77A-5BD9-4C88-87E9-EF506BC684E2}|NatLap06\\NatLap06.csproj|c:\\k23cnt1\\k23cnt1_nguyen-anh-tuan_asp.net-core\\natlap06\\natlap06\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A197D77A-5BD9-4C88-87E9-EF506BC684E2}|NatLap06\\NatLap06.csproj|solutionrelative:natlap06\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A197D77A-5BD9-4C88-87E9-EF506BC684E2}|NatLap06\\NatLap06.csproj|c:\\k23cnt1\\k23cnt1_nguyen-anh-tuan_asp.net-core\\natlap06\\natlap06\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A197D77A-5BD9-4C88-87E9-EF506BC684E2}|NatLap06\\NatLap06.csproj|solutionrelative:natlap06\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A197D77A-5BD9-4C88-87E9-EF506BC684E2}|NatLap06\\NatLap06.csproj|c:\\k23cnt1\\k23cnt1_nguyen-anh-tuan_asp.net-core\\natlap06\\natlap06\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A197D77A-5BD9-4C88-87E9-EF506BC684E2}|NatLap06\\NatLap06.csproj|solutionrelative:natlap06\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NatCreate.cshtml",
+              "DocumentMoniker": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLap06\\NatLap06\\Views\\NatEmployee\\NatCreate.cshtml",
+              "RelativeDocumentMoniker": "NatLap06\\Views\\NatEmployee\\NatCreate.cshtml",
+              "ToolTip": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLap06\\NatLap06\\Views\\NatEmployee\\NatCreate.cshtml*",
+              "RelativeToolTip": "NatLap06\\Views\\NatEmployee\\NatCreate.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T04:12:11.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NatIndex.cshtml",
+              "DocumentMoniker": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLap06\\NatLap06\\Views\\NatEmployee\\NatIndex.cshtml",
+              "RelativeDocumentMoniker": "NatLap06\\Views\\NatEmployee\\NatIndex.cshtml",
+              "ToolTip": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLap06\\NatLap06\\Views\\NatEmployee\\NatIndex.cshtml",
+              "RelativeToolTip": "NatLap06\\Views\\NatEmployee\\NatIndex.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T04:07:15.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NatEmployeeController.cs",
+              "DocumentMoniker": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLap06\\NatLap06\\Controllers\\NatEmployeeController.cs",
+              "RelativeDocumentMoniker": "NatLap06\\Controllers\\NatEmployeeController.cs",
+              "ToolTip": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLap06\\NatLap06\\Controllers\\NatEmployeeController.cs",
+              "RelativeToolTip": "NatLap06\\Controllers\\NatEmployeeController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAuwBYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T04:03:56.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NatEmployee.cs",
+              "DocumentMoniker": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLap06\\NatLap06\\Models\\NatEmployee.cs",
+              "RelativeDocumentMoniker": "NatLap06\\Models\\NatEmployee.cs",
+              "ToolTip": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLap06\\NatLap06\\Models\\NatEmployee.cs",
+              "RelativeToolTip": "NatLap06\\Models\\NatEmployee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T04:03:03.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NatAbout.cshtml",
+              "DocumentMoniker": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLap06\\NatLap06\\Views\\NatHome\\NatAbout.cshtml",
+              "RelativeDocumentMoniker": "NatLap06\\Views\\NatHome\\NatAbout.cshtml",
+              "ToolTip": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLap06\\NatLap06\\Views\\NatHome\\NatAbout.cshtml",
+              "RelativeToolTip": "NatLap06\\Views\\NatHome\\NatAbout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T03:49:22.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NatHomeController.cs",
+              "DocumentMoniker": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLap06\\NatLap06\\Controllers\\NatHomeController.cs",
+              "RelativeDocumentMoniker": "NatLap06\\Controllers\\NatHomeController.cs",
+              "ToolTip": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLap06\\NatLap06\\Controllers\\NatHomeController.cs",
+              "RelativeToolTip": "NatLap06\\Controllers\\NatHomeController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T03:47:28.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_NatLayout.cshtml",
+              "DocumentMoniker": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLap06\\NatLap06\\Views\\Shared\\_NatLayout.cshtml",
+              "RelativeDocumentMoniker": "NatLap06\\Views\\Shared\\_NatLayout.cshtml",
+              "ToolTip": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLap06\\NatLap06\\Views\\Shared\\_NatLayout.cshtml",
+              "RelativeToolTip": "NatLap06\\Views\\Shared\\_NatLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T03:46:57.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLap06\\NatLap06\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "NatLap06\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLap06\\NatLap06\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "NatLap06\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T03:46:54.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLap06\\NatLap06\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "NatLap06\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLap06\\NatLap06\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "NatLap06\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T03:46:44.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLap06\\NatLap06\\Program.cs",
+              "RelativeDocumentMoniker": "NatLap06\\Program.cs",
+              "ToolTip": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLap06\\NatLap06\\Program.cs",
+              "RelativeToolTip": "NatLap06\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T03:46:16.006Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

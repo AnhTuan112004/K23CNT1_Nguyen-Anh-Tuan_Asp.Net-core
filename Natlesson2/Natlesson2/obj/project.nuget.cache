@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CYqildaaO9k=",
+  "dgSpecHash": "A9cRrjOIFXc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\nguye\\source\\repos\\Natlesson2\\Natlesson2\\Natlesson2.csproj",
+  "projectFilePath": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\Natlesson2\\Natlesson2\\Natlesson2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nguye\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\nguye\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

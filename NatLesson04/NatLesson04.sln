@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NatLesson04", "NatLesson04\NatLesson04.csproj", "{8A4CAA8E-BB72-4B5C-88CE-337BA2FDC771}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A4CAA8E-BB72-4B5C-88CE-337BA2FDC771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A4CAA8E-BB72-4B5C-88CE-337BA2FDC771}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A4CAA8E-BB72-4B5C-88CE-337BA2FDC771}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A4CAA8E-BB72-4B5C-88CE-337BA2FDC771}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

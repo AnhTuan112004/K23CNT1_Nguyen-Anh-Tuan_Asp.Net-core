@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\NatLap06.props" />
+</Project>

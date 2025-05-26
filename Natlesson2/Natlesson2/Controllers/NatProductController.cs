@@ -45,9 +45,9 @@ namespace Natlesson2.Controllers
                 new NatProduct() { NatProductId = 14, NatProductName = "Electra Girl's Hawaii 1 (16-inch) - 2015/2016", NatYearRelease = 2016, NatPrice = 269.99 }
             };
 
-            ViewBag.products = Natproducts;
+            ViewBag.Natproducts = Natproducts;
             // Trả về view tên là Products trong thư mục /Views/Product/
-            return View("Products");
+            return View("NatProducts");
         }
     }
 }

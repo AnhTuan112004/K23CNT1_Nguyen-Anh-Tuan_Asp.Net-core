@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nguye\\source\\repos\\Natlesson2\\Natlesson2\\Natlesson2.csproj": {}
+    "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\Natlesson2\\Natlesson2\\Natlesson2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nguye\\source\\repos\\Natlesson2\\Natlesson2\\Natlesson2.csproj": {
+    "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\Natlesson2\\Natlesson2\\Natlesson2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nguye\\source\\repos\\Natlesson2\\Natlesson2\\Natlesson2.csproj",
+        "projectUniqueName": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\Natlesson2\\Natlesson2\\Natlesson2.csproj",
         "projectName": "Natlesson2",
-        "projectPath": "C:\\Users\\nguye\\source\\repos\\Natlesson2\\Natlesson2\\Natlesson2.csproj",
+        "projectPath": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\Natlesson2\\Natlesson2\\Natlesson2.csproj",
         "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nguye\\source\\repos\\Natlesson2\\Natlesson2\\obj\\",
+        "outputPath": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\Natlesson2\\Natlesson2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

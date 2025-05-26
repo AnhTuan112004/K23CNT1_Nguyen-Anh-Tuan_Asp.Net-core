@@ -1,0 +1,33 @@
+﻿@model List<NatLab06.Models.NatEmployee>
+@{
+    ViewData["Title"] = "Danh sách nhân viên";
+}
+<h2>Danh sách nhân viên</h2>
+<a href="/NatEmployee/NatCreate" class="btn btn-primary mb-2">Thêm nhân viên</a>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Tên</th>
+            <th>Ngày sinh</th>
+            <th>Email</th>
+            <th>Điện thoại</th>
+            <th>Lương</th>
+            <th>Trạng thái</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var emp in Model)
+        {
+            <tr>
+                <td>@emp.NatId</td>
+                <td>@emp.NatName</td>
+                <td>@emp.NatBirthDay.ToShortDateString()</td>
+                <td>@emp.NatEmail</td>
+                <td>@emp.NatPhone</td>
+                <td>@emp.NatSalary</td>
+                <td>@(emp.NatStatus ? "Đang làm" : "Nghỉ")</td>
+            </tr>
+        }
+    </tbody>
+</table>

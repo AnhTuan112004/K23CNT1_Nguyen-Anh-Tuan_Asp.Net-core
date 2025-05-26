@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\Nat_lesson03\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1FDF13CA-A93D-4115-961B-F22DE61A3FFF}|Nat_lesson03\\Nat_lesson03.csproj|c:\\k23cnt1\\k23cnt1_nguyen-anh-tuan_asp.net-core\\nat_lesson03\\nat_lesson03\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FDF13CA-A93D-4115-961B-F22DE61A3FFF}|Nat_lesson03\\Nat_lesson03.csproj|solutionrelative:nat_lesson03\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\Nat_lesson03\\Nat_lesson03\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Nat_lesson03\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\Nat_lesson03\\Nat_lesson03\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Nat_lesson03\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T01:52:06.117Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
