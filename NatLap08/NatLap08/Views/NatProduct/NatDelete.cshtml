@@ -1,0 +1,21 @@
+﻿@model NatLap08.Models.NatProduct
+
+@{
+    ViewData["Title"] = "Xóa sản phẩm";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<h3>Bạn có chắc chắn muốn xóa sản phẩm này không?</h3>
+
+<div>
+    <h4>@Model.NatName</h4>
+    <p>Giá: @Model.NatPrice.ToString("N0")</p>
+    <p>Mô tả: @Model.NatDescription</p>
+</div>
+
+<form asp-action="NatDeleteConfirmed" method="post">
+    <input type="hidden" asp-for="NatId" />
+    <button type="submit" class="btn btn-danger">Xóa</button>
+    <a asp-action="NatIndex" class="btn btn-secondary">Hủy</a>
+</form>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fpZFemvTrpc=",
+  "dgSpecHash": "kDcZZZSQYq0=",
   "success": true,
-  "projectFilePath": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLap06\\NatLap06\\NatLap06.csproj",
+  "projectFilePath": "C:\\K23CNT1\\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\\NatLap06+07\\NatLap06\\NatLap06.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nguye\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\nguye\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

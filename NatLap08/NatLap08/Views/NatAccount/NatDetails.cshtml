@@ -1,0 +1,65 @@
+﻿@model NatLap08.Models.NatAccount
+
+@{
+    ViewData["Title"] = "Chi tiết tài khoản";
+}
+
+<h2 class="text-primary">Chi tiết tài khoản</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Họ và tên</th>
+        <td>@Model.NatFullName</td>
+    </tr>
+    <tr>
+        <th>Email</th>
+        <td>@Model.NatEmail</td>
+    </tr>
+    <tr>
+        <th>Số điện thoại</th>
+        <td>@Model.NatPhone</td>
+    </tr>
+    <tr>
+        <th>Địa chỉ</th>
+        <td>@Model.NatAddress</td>
+    </tr>
+    <tr>
+        <th>Ngày sinh</th>
+        <td>@Model.NatBirthday.ToShortDateString()</td>
+    </tr>
+    <tr>
+        <th>Giới tính</th>
+        <td>@Model.NatGender</td>
+    </tr>
+    <tr>
+        <th>Ảnh đại diện</th>
+        <td>
+            @if (!string.IsNullOrEmpty(Model.NatAvatar))
+            {
+                <img src="@Model.NatAvatar" width="100" height="100" class="rounded" alt="Ảnh đại diện" />
+            }
+            else
+            {
+                <span>Chưa có ảnh</span>
+            }
+        </td>
+    </tr>
+    <tr>
+        <th>Mật khẩu</th>
+        <td>
+            @for (int i = 0; i < (Model.NatPassword?.Length ?? 0); i++)
+            {
+                @("*")
+            }
+        </td>
+    </tr>
+    <tr>
+        <th>Facebook</th>
+        <td><a href="@Model.NatFacebook" target="_blank">@Model.NatFacebook</a></td>
+    </tr>
+</table>
+
+<p>
+    <a asp-action="NatEdit" asp-route-id="@Model.NatId" class="btn btn-warning">Sửa</a>
+    <a asp-action="NatIndex" class="btn btn-secondary">Quay lại danh sách</a>
+</p>

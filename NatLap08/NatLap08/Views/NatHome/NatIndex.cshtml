@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Trang chủ";
+    var projects = ViewBag.Projects as dynamic[];
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>Chọn bài làm để xem chi tiết:</p>
+
+<ul>
+    @if (projects != null && projects.Length > 0)
+    {
+        foreach (var project in projects)
+        {
+            <li>
+                <a asp-controller="@project.Controller" asp-action="@project.Action">
+                    @project.Name
+                </a>
+            </li>
+        }
+    }
+    else
+    {
+        <li>Chưa có bài làm nào.</li>
+    }
+</ul>

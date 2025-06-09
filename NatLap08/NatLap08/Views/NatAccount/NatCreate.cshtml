@@ -1,0 +1,75 @@
+﻿@model NatLap08.Models.NatAccount
+
+@{
+    ViewData["Title"] = "Tạo tài khoản mới";
+}
+
+<h2 class="text-primary">Tạo tài khoản mới</h2>
+
+<form asp-action="NatCreate" method="post">
+    <div class="form-group">
+        <label asp-for="NatFullName"></label>
+        <input asp-for="NatFullName" class="form-control" />
+        <span asp-validation-for="NatFullName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NatEmail"></label>
+        <input asp-for="NatEmail" class="form-control" />
+        <span asp-validation-for="NatEmail" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NatPhone"></label>
+        <input asp-for="NatPhone" class="form-control" />
+        <span asp-validation-for="NatPhone" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NatAddress"></label>
+        <input asp-for="NatAddress" class="form-control" />
+        <span asp-validation-for="NatAddress" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NatAvatar"></label>
+        <input asp-for="NatAvatar" class="form-control" placeholder="URL ảnh đại diện (tùy chọn)" />
+        <span asp-validation-for="NatAvatar" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NatBirthday"></label>
+        <input asp-for="NatBirthday" type="date" class="form-control" />
+        <span asp-validation-for="NatBirthday" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NatGender"></label>
+        <select asp-for="NatGender" class="form-control">
+            <option value="">--Chọn giới tính--</option>
+            <option>Nam</option>
+            <option>Nữ</option>
+            <option>Khác</option>
+        </select>
+        <span asp-validation-for="NatGender" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NatPassword"></label>
+        <input asp-for="NatPassword" type="password" class="form-control" />
+        <span asp-validation-for="NatPassword" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NatFacebook"></label>
+        <input asp-for="NatFacebook" class="form-control" />
+        <span asp-validation-for="NatFacebook" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">Tạo mới</button>
+    <a asp-action="NatIndex" class="btn btn-secondary">Hủy</a>
+</form>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

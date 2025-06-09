@@ -1,0 +1,97 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = NatLap08
+build_property.RootNamespace = NatLap08
+build_property.ProjectDir = C:\K23CNT1\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\NatLap08\NatLap08\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\K23CNT1\K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core\NatLap08\NatLap08
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/K23CNT1/K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core/NatLap08/NatLap08/Views/NatAccount/NatCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF0QWNjb3VudFxOYXRDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/K23CNT1/K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core/NatLap08/NatLap08/Views/NatAccount/NatDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF0QWNjb3VudFxOYXREZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/K23CNT1/K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core/NatLap08/NatLap08/Views/NatAccount/NatDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF0QWNjb3VudFxOYXREZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/K23CNT1/K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core/NatLap08/NatLap08/Views/NatAccount/NatEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF0QWNjb3VudFxOYXRFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/K23CNT1/K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core/NatLap08/NatLap08/Views/NatAccount/NatIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF0QWNjb3VudFxOYXRJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/K23CNT1/K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core/NatLap08/NatLap08/Views/NatHome/NatIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF0SG9tZVxOYXRJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/K23CNT1/K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core/NatLap08/NatLap08/Views/NatHome/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF0SG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/K23CNT1/K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core/NatLap08/NatLap08/Views/NatProduct/NatCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF0UHJvZHVjdFxOYXRDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/K23CNT1/K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core/NatLap08/NatLap08/Views/NatProduct/NatDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF0UHJvZHVjdFxOYXREZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/K23CNT1/K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core/NatLap08/NatLap08/Views/NatProduct/NatDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF0UHJvZHVjdFxOYXREZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/K23CNT1/K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core/NatLap08/NatLap08/Views/NatProduct/NatEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF0UHJvZHVjdFxOYXRFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/K23CNT1/K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core/NatLap08/NatLap08/Views/NatProduct/NatIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF0UHJvZHVjdFxOYXRJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/K23CNT1/K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core/NatLap08/NatLap08/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/K23CNT1/K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core/NatLap08/NatLap08/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/K23CNT1/K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core/NatLap08/NatLap08/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/K23CNT1/K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core/NatLap08/NatLap08/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/K23CNT1/K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core/NatLap08/NatLap08/Views/Shared/_NatLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXRMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ydfvb3x3ko

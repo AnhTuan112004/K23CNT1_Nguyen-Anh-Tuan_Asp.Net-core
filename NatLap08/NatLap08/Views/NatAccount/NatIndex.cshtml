@@ -1,0 +1,41 @@
+﻿@model List<NatLap08.Models.NatAccount>
+
+@{
+    ViewData["Title"] = "Danh sách tài khoản";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>
+    <a asp-controller="NatAccount" asp-action="NatCreate" class="btn btn-primary">Tạo tài khoản mới</a>
+</p>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Họ và tên</th>
+            <th>Email</th>
+            <th>Số điện thoại</th>
+            <th>Giới tính</th>
+            <th>Ngày sinh</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var account in Model)
+        {
+            <tr>
+                <td>@account.NatFullName</td>
+                <td>@account.NatEmail</td>
+                <td>@account.NatPhone</td>
+                <td>@account.NatGender</td>
+                <td>@account.NatBirthday.ToString("dd/MM/yyyy")</td>
+                <td>
+                    <a asp-controller="NatAccount" asp-action="NatDetails" asp-route-id="@account.NatId" class="btn btn-info btn-sm">Chi tiết</a>
+                    <a asp-controller="NatAccount" asp-action="NatEdit" asp-route-id="@account.NatId" class="btn btn-warning btn-sm">Sửa</a>
+                    <a asp-controller="NatAccount" asp-action="NatDelete" asp-route-id="@account.NatId" class="btn btn-danger btn-sm">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,57 @@
+﻿@model NatLap08.Models.NatProduct
+
+@{
+    ViewData["Title"] = "Thêm mới sản phẩm";
+    var categories = ViewData["NatCategories"] as List<NatLap08.Models.NatCategory>;
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="NatCreate" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="NatName"></label>
+        <input asp-for="NatName" class="form-control" />
+        <span asp-validation-for="NatName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NatImage"></label>
+        <input asp-for="NatImage" class="form-control" />
+        <span asp-validation-for="NatImage" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NatPrice"></label>
+        <input asp-for="NatPrice" class="form-control" />
+        <span asp-validation-for="NatPrice" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NatSalePrice"></label>
+        <input asp-for="NatSalePrice" class="form-control" />
+        <span asp-validation-for="NatSalePrice" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NatDescription"></label>
+        <textarea asp-for="NatDescription" class="form-control"></textarea>
+        <span asp-validation-for="NatDescription" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NatCategoryId"></label>
+        <select asp-for="NatCategoryId" class="form-control" asp-items="@(new SelectList(categories, "NatId", "NatName"))">
+            <option value="">-- Chọn danh mục --</option>
+        </select>
+        <span asp-validation-for="NatCategoryId" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">Lưu</button>
+    <a asp-action="NatIndex" class="btn btn-secondary">Hủy</a>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

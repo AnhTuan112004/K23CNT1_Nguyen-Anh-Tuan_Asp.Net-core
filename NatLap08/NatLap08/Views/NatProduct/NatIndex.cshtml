@@ -1,0 +1,52 @@
+﻿@model IEnumerable<NatLap08.Models.NatProduct>
+
+@{
+    ViewData["Title"] = "Danh sách sản phẩm";
+
+    // Ép kiểu ViewBag.NatCategories thành danh sách 1 lần duy nhất
+    var categories = (List<NatLap08.Models.NatCategory>)ViewBag.NatCategories;
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>
+    <a asp-action="NatCreate" class="btn btn-primary">Thêm mới sản phẩm</a>
+</p>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Tên sản phẩm</th>
+            <th>Ảnh</th>
+            <th>Giá</th>
+            <th>Giá khuyến mãi</th>
+            <th>Mô tả</th>
+            <th>Danh mục</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            var category = categories.FirstOrDefault(c => c.NatId == item.NatCategoryId);
+            <tr>
+                <td>@item.NatId</td>
+                <td>@item.NatName</td>
+                <td>
+                    <img src="~/products/@(string.IsNullOrEmpty(item.NatImage) ? "default.png" : item.NatImage)"
+                         width="50" alt="@item.NatName" />
+                </td>
+                <td>@item.NatPrice.ToString("N0")</td>
+                <td>@item.NatSalePrice.ToString("N0")</td>
+                <td>@item.NatDescription</td>
+                <td>@(category?.NatName ?? "Chưa chọn")</td>
+                <td>
+                    <a asp-action="NatDetails" asp-route-id="@item.NatId">Xem</a> |
+                    <a asp-action="NatEdit" asp-route-id="@item.NatId">Sửa</a> |
+                    <a asp-action="NatDelete" asp-route-id="@item.NatId">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

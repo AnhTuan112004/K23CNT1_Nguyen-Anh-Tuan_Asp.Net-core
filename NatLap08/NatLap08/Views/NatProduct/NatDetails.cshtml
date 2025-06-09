@@ -1,0 +1,32 @@
+﻿@model NatLap08.Models.NatProduct
+
+@{
+    ViewData["Title"] = "Chi tiết sản phẩm";
+    var categories = ViewData["NatCategories"] as List<NatLap08.Models.NatCategory>;
+    var catName = categories?.FirstOrDefault(c => c.NatId == Model.NatCategoryId)?.NatName ?? "Chưa chọn";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <h4>@Model.NatName</h4>
+    <img src="~/products/@Model.NatImage" alt="@Model.NatName" style="width:150px;" />
+    <dl class="row">
+        <dt class="col-sm-2">Giá</dt>
+        <dd class="col-sm-10">@Model.NatPrice.ToString("N0")</dd>
+
+        <dt class="col-sm-2">Giá khuyến mãi</dt>
+        <dd class="col-sm-10">@Model.NatSalePrice.ToString("N0")</dd>
+
+        <dt class="col-sm-2">Mô tả</dt>
+        <dd class="col-sm-10">@Model.NatDescription</dd>
+
+        <dt class="col-sm-2">Danh mục</dt>
+        <dd class="col-sm-10">@catName</dd>
+    </dl>
+</div>
+
+<p>
+    <a asp-action="NatEdit" asp-route-id="@Model.NatId" class="btn btn-primary">Sửa</a>
+    <a asp-action="NatIndex" class="btn btn-secondary">Quay lại</a>
+</p>
