@@ -1,4 +1,10 @@
-﻿<nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm sticky-top">
+﻿@{
+    var controller = ViewContext.RouteData.Values["controller"]?.ToString();
+    var action = ViewContext.RouteData.Values["action"]?.ToString();
+    var isBookSection = controller == "NatBooks" || controller == "NatCategories" || controller == "NatPublishers";
+}
+
+<nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm sticky-top">
     <div class="container">
         <a class="navbar-brand fw-bold text-primary" asp-controller="NatHome" asp-action="NatIndex">
             <i class="bi bi-book-half me-1"></i> Natlesson10
@@ -11,23 +17,42 @@
 
         <div class="collapse navbar-collapse" id="mainNavbar">
             <ul class="navbar-nav ms-auto">
+                <!-- Trang chủ -->
                 <li class="nav-item">
-                    <a class="nav-link @(ViewContext.RouteData.Values["action"]?.ToString() == "NatIndex" ? "active text-primary" : "text-dark")"
+                    <a class="nav-link @(controller == "NatHome" && action == "NatIndex" ? "active text-primary fw-bold" : "text-dark")"
                        asp-controller="NatHome" asp-action="NatIndex">
                         <i class="bi bi-house-door-fill me-1"></i> Trang chủ
                     </a>
                 </li>
+
+                <!-- Thông tin sinh viên -->
                 <li class="nav-item">
-                    <a class="nav-link @(ViewContext.RouteData.Values["action"]?.ToString() == "NatAbout" ? "active text-primary" : "text-dark")"
+                    <a class="nav-link @(controller == "NatHome" && action == "NatAbout" ? "active text-primary fw-bold" : "text-dark")"
                        asp-controller="NatHome" asp-action="NatAbout">
                         <i class="bi bi-info-circle-fill me-1"></i> Thông tin sinh viên
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "NatCategories" ? "active text-primary" : "text-dark")"
-                       asp-controller="NatCategories" asp-action="NatIndex1">
-                        <i class="bi bi-journal-bookmark-fill me-1"></i> Loại sách
+
+                <!-- Quản lý sách (Dropdown) -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle @(isBookSection ? "text-primary fw-bold" : "text-dark")"
+                       href="#" id="bookDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-journals me-1"></i> Quản lý sách
                     </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bookDropdown">
+                        <li>
+                            <a class="dropdown-item @(controller == "NatCategories" ? "active fw-bold text-primary" : "")"
+                               asp-controller="NatCategories" asp-action="NatIndex1">
+                                <i class="bi bi-journal-bookmark-fill me-1"></i> Loại sách
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item @(controller == "NatPublishers" ? "active fw-bold text-primary" : "")"
+                               asp-controller="NatPublishers" asp-action="Index">
+                                <i class="bi bi-building me-1"></i> Nhà xuất bản
+                            </a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </div>

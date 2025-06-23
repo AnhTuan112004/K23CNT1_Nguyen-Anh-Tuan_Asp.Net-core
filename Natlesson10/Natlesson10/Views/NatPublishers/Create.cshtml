@@ -1,0 +1,65 @@
+﻿@model Natlesson10.Models.Publisher
+@{
+    ViewData["Title"] = "Thêm nhà xuất bản";
+}
+
+<div class="container mt-4">
+    <!-- Tiêu đề -->
+    <h2 class="text-success mb-3">
+        <i class="bi bi-building-add me-1"></i> @ViewData["Title"]
+    </h2>
+    <hr />
+
+    <!-- Form tạo mới -->
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form asp-action="Create" class="shadow p-4 rounded bg-light border border-success-subtle">
+                <!-- Hiển thị lỗi -->
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                <!-- Tên NXB -->
+                <div class="form-floating mb-3">
+                    <input asp-for="PublisherName" class="form-control" placeholder="Tên nhà xuất bản" />
+                    <label asp-for="PublisherName">
+                        <i class="bi bi-type me-1 text-primary"></i> Tên nhà xuất bản
+                    </label>
+                    <span asp-validation-for="PublisherName" class="text-danger"></span>
+                </div>
+
+                <!-- Điện thoại -->
+                <div class="form-floating mb-3">
+                    <input asp-for="Phone" class="form-control" placeholder="Điện thoại" />
+                    <label asp-for="Phone">
+                        <i class="bi bi-telephone me-1 text-success"></i> Điện thoại
+                    </label>
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+                </div>
+
+                <!-- Địa chỉ -->
+                <div class="form-floating mb-3">
+                    <input asp-for="Address" class="form-control" placeholder="Địa chỉ" />
+                    <label asp-for="Address">
+                        <i class="bi bi-geo-alt-fill me-1 text-danger"></i> Địa chỉ
+                    </label>
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+
+                <!-- Nút điều hướng -->
+                <div class="d-flex justify-content-between mt-4">
+                    <a asp-action="Index" class="btn btn-outline-secondary shadow-sm px-4">
+                        <i class="bi bi-arrow-left-circle"></i> Quay lại
+                    </a>
+                    <button type="submit" class="btn btn-success shadow-sm px-4">
+                        <i class="bi bi-check-circle-fill"></i> Thêm mới
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Chính sách bảo mật";
+}
+
+<div class="container mt-4">
+    <h2 class="text-primary mb-3">
+        <i class="bi bi-shield-lock-fill me-1"></i> @ViewData["Title"]
+    </h2>
+    <hr />
+
+    <div class="bg-light p-4 rounded shadow-sm border-start border-5 border-info">
+        <p class="mb-4">
+            Trang web <strong>Natlesson10</strong> cam kết bảo vệ quyền riêng tư và thông tin cá nhân của người dùng.
+        </p>
+
+        <h5 class="text-info"><i class="bi bi-person-lock me-1"></i> 1. Thu thập thông tin</h5>
+        <p>
+            Chúng tôi chỉ thu thập các thông tin cần thiết phục vụ cho mục đích quản lý, liên hệ và cải tiến trải nghiệm người dùng.
+        </p>
+
+        <h5 class="text-info"><i class="bi bi-shield-check me-1"></i> 2. Sử dụng thông tin</h5>
+        <p>
+            Thông tin được sử dụng nội bộ để cải thiện dịch vụ, không chia sẻ với bên thứ ba khi chưa có sự đồng ý của người dùng.
+        </p>
+
+        <h5 class="text-info"><i class="bi bi-lock-fill me-1"></i> 3. Bảo mật dữ liệu</h5>
+        <p>
+            Chúng tôi áp dụng các biện pháp kỹ thuật để bảo vệ dữ liệu khỏi mất mát, truy cập trái phép hoặc tiết lộ thông tin.
+        </p>
+
+        <h5 class="text-info"><i class="bi bi-clock-history me-1"></i> 4. Thời gian lưu trữ</h5>
+        <p>
+            Dữ liệu sẽ được lưu trữ trong hệ thống cho đến khi không còn cần thiết cho mục đích hoạt động hoặc theo yêu cầu của người dùng.
+        </p>
+
+        <h5 class="text-info"><i class="bi bi-question-circle me-1"></i> 5. Liên hệ</h5>
+        <p>
+            Mọi thắc mắc về chính sách bảo mật, vui lòng liên hệ qua email: <a href="mailto:natlesson10@university.edu">natlesson10@university.edu</a>
+        </p>
+    </div>
+
+    <div class="mt-4">
+        <a asp-action="NatIndex" asp-controller="NatHome" class="btn btn-outline-primary">
+            <i class="bi bi-arrow-left-circle"></i> Quay lại trang chủ
+        </a>
+    </div>
+</div>

@@ -56,6 +56,30 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF0SG9tZVxOYXRJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/K23CNT1/K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core/Natlesson10/Natlesson10/Views/NatHome/NatPolicy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF0SG9tZVxOYXRQb2xpY3kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/K23CNT1/K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core/Natlesson10/Natlesson10/Views/NatPublishers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF0UHVibGlzaGVyc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/K23CNT1/K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core/Natlesson10/Natlesson10/Views/NatPublishers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF0UHVibGlzaGVyc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/K23CNT1/K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core/Natlesson10/Natlesson10/Views/NatPublishers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF0UHVibGlzaGVyc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/K23CNT1/K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core/Natlesson10/Natlesson10/Views/NatPublishers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF0UHVibGlzaGVyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/K23CNT1/K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core/Natlesson10/Natlesson10/Views/NatPublishers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF0UHVibGlzaGVyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/K23CNT1/K23CNT1_Nguyen-Anh-Tuan_Asp.Net-core/Natlesson10/Natlesson10/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

@@ -1,0 +1,56 @@
+﻿@model Natlesson10.Models.Publisher
+@{
+    ViewData["Title"] = "Xóa nhà xuất bản";
+}
+
+<div class="container mt-4">
+    <!-- Tiêu đề cảnh báo -->
+    <h2 class="text-danger mb-3">
+        <i class="bi bi-exclamation-triangle-fill me-1"></i> @ViewData["Title"]
+    </h2>
+
+    <!-- Cảnh báo người dùng -->
+    <p class="text-muted">
+        Bạn có chắc chắn muốn xóa nhà xuất bản dưới đây không?
+        <strong class="text-danger">Thao tác này không thể hoàn tác.</strong>
+    </p>
+
+    <hr />
+
+    <!-- Thông tin chi tiết nhà xuất bản -->
+    <dl class="row bg-light p-4 rounded shadow-sm border border-2 border-danger-subtle">
+        <dt class="col-sm-3 text-end fw-bold text-danger">
+            <i class="bi bi-type me-1"></i> Tên
+        </dt>
+        <dd class="col-sm-9 text-dark">
+            @Html.DisplayFor(model => model.PublisherName)
+        </dd>
+
+        <dt class="col-sm-3 text-end fw-bold text-danger">
+            <i class="bi bi-telephone-fill me-1"></i> SĐT
+        </dt>
+        <dd class="col-sm-9 text-dark">
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+
+        <dt class="col-sm-3 text-end fw-bold text-danger">
+            <i class="bi bi-geo-alt-fill me-1"></i> Địa chỉ
+        </dt>
+        <dd class="col-sm-9 text-dark">
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+    </dl>
+
+    <!-- Nút hành động -->
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="PublisherId" />
+        <div class="d-flex justify-content-between mt-4">
+            <a asp-action="Index" class="btn btn-outline-secondary shadow-sm px-4">
+                <i class="bi bi-arrow-left-circle"></i> Quay lại
+            </a>
+            <button type="submit" class="btn btn-danger shadow-sm px-4">
+                <i class="bi bi-trash-fill"></i> Xác nhận xóa
+            </button>
+        </div>
+    </form>
+</div>

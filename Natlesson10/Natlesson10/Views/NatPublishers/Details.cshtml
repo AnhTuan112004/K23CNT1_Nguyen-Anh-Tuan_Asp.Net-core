@@ -1,0 +1,55 @@
+﻿@model Natlesson10.Models.Publisher
+
+@{
+    ViewData["Title"] = "Chi tiết nhà xuất bản";
+}
+
+<div class="container mt-4">
+    <!-- Tiêu đề -->
+    <h2 class="text-primary mb-3">
+        <i class="bi bi-eye-fill me-1 text-info"></i> @ViewData["Title"]
+    </h2>
+    <hr />
+
+    <!-- Hộp thông tin chi tiết -->
+    <div class="bg-light rounded-4 shadow-sm border-start border-info border-4 p-4">
+        <dl class="row mb-0">
+            <dt class="col-sm-3 text-end text-secondary fw-semibold">
+                <i class="bi bi-type me-1 text-primary"></i> @Html.DisplayNameFor(model => model.PublisherName)
+            </dt>
+            <dd class="col-sm-9 text-dark">
+                <span class="badge bg-primary-subtle text-primary fs-6 px-3 py-2 shadow-sm">
+                    @Html.DisplayFor(model => model.PublisherName)
+                </span>
+            </dd>
+
+            <dt class="col-sm-3 text-end text-secondary fw-semibold mt-3">
+                <i class="bi bi-telephone me-1 text-success"></i> @Html.DisplayNameFor(model => model.Phone)
+            </dt>
+            <dd class="col-sm-9 text-dark mt-3">
+                <span class="badge bg-success-subtle text-success fs-6 px-3 py-2 shadow-sm">
+                    @Html.DisplayFor(model => model.Phone)
+                </span>
+            </dd>
+
+            <dt class="col-sm-3 text-end text-secondary fw-semibold mt-3">
+                <i class="bi bi-geo-alt-fill me-1 text-danger"></i> @Html.DisplayNameFor(model => model.Address)
+            </dt>
+            <dd class="col-sm-9 text-dark mt-3">
+                <span class="badge bg-danger-subtle text-danger fs-6 px-3 py-2 shadow-sm">
+                    @Html.DisplayFor(model => model.Address)
+                </span>
+            </dd>
+        </dl>
+    </div>
+
+    <!-- Nút điều hướng -->
+    <div class="d-flex justify-content-between mt-4">
+        <a class="btn btn-warning shadow-sm px-4" asp-action="Edit" asp-route-natId="@Model.PublisherId">
+            <i class="bi bi-pencil-fill"></i> Sửa
+        </a>
+        <a class="btn btn-outline-secondary shadow-sm px-4" asp-action="Index">
+            <i class="bi bi-arrow-left-circle"></i> Quay lại danh sách
+        </a>
+    </div>
+</div>

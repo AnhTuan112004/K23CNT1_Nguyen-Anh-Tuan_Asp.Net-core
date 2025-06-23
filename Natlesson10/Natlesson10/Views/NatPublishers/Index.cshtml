@@ -1,0 +1,136 @@
+﻿@model IEnumerable<Natlesson10.Models.Publisher>
+
+@{
+    ViewData["Title"] = "Danh sách nhà xuất bản";
+    var search = ViewBag.Search as string ?? "";
+    var total = (int)ViewBag.Total;
+    var page = (int)ViewBag.Page;
+    var totalPages = (int)ViewBag.TotalPages;
+    var currentSort = ViewBag.CurrentSort as string ?? "";
+    var nameSort = ViewBag.NameSort as string ?? "";
+    var phoneSort = ViewBag.PhoneSort as string ?? "";
+}
+
+<div class="container mt-4">
+    <!-- Tiêu đề + Thêm mới -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="text-primary">
+            <i class="bi bi-building-fill-add me-1"></i> @ViewData["Title"]
+        </h2>
+        <a asp-action="Create" class="btn btn-success shadow-sm">
+            <i class="bi bi-plus-circle-fill"></i> Thêm mới
+        </a>
+    </div>
+
+    <!-- Tìm kiếm -->
+    <form method="get" class="row row-cols-lg-auto g-2 align-items-center mb-3">
+        <div class="col-12 col-md-5">
+            <input type="text" name="search" class="form-control shadow-sm"
+                   placeholder="Tìm theo tên, địa chỉ hoặc SĐT..." value="@search" />
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-outline-primary">
+                <i class="bi bi-search"></i> Tìm kiếm
+            </button>
+        </div>
+    </form>
+
+    <!-- Thống kê -->
+    <p class="text-muted fst-italic">
+        <i class="bi bi-list-ol"></i> Tổng số: <strong>@total</strong> nhà xuất bản
+    </p>
+
+    <!-- Bảng dữ liệu -->
+    <div class="table-responsive shadow-sm">
+        <table class="table table-bordered table-hover align-middle mb-0">
+            <thead class="table-light text-center align-middle">
+                <tr class="fw-semibold">
+                    <th>
+                        <a class="text-decoration-none text-dark" asp-action="Index"
+                           asp-route-search="@search" asp-route-sortOrder="@nameSort">
+                            Tên nhà xuất bản
+                            @if (currentSort == "name_asc")
+                            {
+                                <i class="bi bi-caret-up-fill text-secondary"></i>
+                            }
+                            else if (currentSort == "name_desc")
+                            {
+                                <i class="bi bi-caret-down-fill text-secondary"></i>
+                            }
+                        </a>
+                    </th>
+                    <th>
+                        <a class="text-decoration-none text-dark" asp-action="Index"
+                           asp-route-search="@search" asp-route-sortOrder="@phoneSort">
+                            Điện thoại
+                            @if (currentSort == "phone_asc")
+                            {
+                                <i class="bi bi-caret-up-fill text-secondary"></i>
+                            }
+                            else if (currentSort == "phone_desc")
+                            {
+                                <i class="bi bi-caret-down-fill text-secondary"></i>
+                            }
+                        </a>
+                    </th>
+                    <th>Địa chỉ</th>
+                    <th class="text-center" style="width: 200px;">Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (!Model.Any())
+                {
+                    <tr>
+                        <td colspan="4" class="text-center text-muted py-3">
+                            <i class="bi bi-emoji-frown"></i> Không tìm thấy kết quả phù hợp.
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.PublisherName</td>
+                            <td>@item.Phone</td>
+                            <td>@item.Address</td>
+                            <td class="text-center">
+                                <a asp-action="Edit" asp-route-natId="@item.PublisherId"
+                                   class="btn btn-sm btn-warning me-1 text-white" title="Sửa">
+                                    <i class="bi bi-pencil-square"></i>
+                                </a>
+                                <a asp-action="Details" asp-route-natId="@item.PublisherId"
+                                   class="btn btn-sm btn-info me-1 text-white" title="Chi tiết">
+                                    <i class="bi bi-eye-fill"></i>
+                                </a>
+                                <a asp-action="Delete" asp-route-natId="@item.PublisherId"
+                                   class="btn btn-sm btn-danger" title="Xoá">
+                                    <i class="bi bi-trash-fill"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Phân trang -->
+    @if (totalPages > 1)
+    {
+        <nav class="mt-4">
+            <ul class="pagination justify-content-center">
+                @for (int i = 1; i <= totalPages; i++)
+                {
+                    <li class="page-item @(i == page ? "active" : "")">
+                        <a class="page-link"
+                           asp-action="Index"
+                           asp-route-search="@search"
+                           asp-route-sortOrder="@currentSort"
+                           asp-route-page="@i">@i</a>
+                    </li>
+                }
+            </ul>
+        </nav>
+    }
+</div>
