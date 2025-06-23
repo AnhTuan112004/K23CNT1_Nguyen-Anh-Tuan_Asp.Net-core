@@ -1,0 +1,43 @@
+﻿@model Natlesson10.Models.Category
+
+@{
+    ViewData["Title"] = "Xoá danh mục";
+}
+
+<h1 class="mt-4 mb-4 text-danger">
+    <i class="bi bi-exclamation-triangle-fill me-2"></i>@ViewData["Title"]
+</h1>
+
+<div class="row justify-content-center">
+    <div class="col-md-7">
+        <div class="card border-danger shadow-sm">
+            <div class="card-header bg-danger text-white">
+                <h5 class="mb-0">
+                    <i class="bi bi-trash-fill me-1"></i> Xác nhận xoá danh mục
+                </h5>
+            </div>
+            <div class="card-body">
+                <p class="text-danger fw-semibold">
+                    Bạn có chắc chắn muốn xoá danh mục sau không? Hành động này không thể hoàn tác.
+                </p>
+
+                <dl class="row mb-4">
+                    <dt class="col-sm-4 text-end fw-semibold">@Html.DisplayNameFor(model => model.CategoryName)</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.CategoryName)</dd>
+                </dl>
+
+                <form asp-action="Delete" method="post">
+                    <input type="hidden" asp-for="CategoryId" />
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" class="btn btn-danger">
+                            <i class="bi bi-check-circle me-1"></i> Xoá
+                        </button>
+                        <a asp-action="NatIndex1" class="btn btn-secondary ms-2">
+                            <i class="bi bi-x-circle me-1"></i> Huỷ bỏ
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

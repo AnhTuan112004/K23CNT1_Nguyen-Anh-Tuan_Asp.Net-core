@@ -1,0 +1,35 @@
+﻿<nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold text-primary" asp-controller="NatHome" asp-action="NatIndex">
+            <i class="bi bi-book-half me-1"></i> Natlesson10
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Chuyển đổi menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link @(ViewContext.RouteData.Values["action"]?.ToString() == "NatIndex" ? "active text-primary" : "text-dark")"
+                       asp-controller="NatHome" asp-action="NatIndex">
+                        <i class="bi bi-house-door-fill me-1"></i> Trang chủ
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link @(ViewContext.RouteData.Values["action"]?.ToString() == "NatAbout" ? "active text-primary" : "text-dark")"
+                       asp-controller="NatHome" asp-action="NatAbout">
+                        <i class="bi bi-info-circle-fill me-1"></i> Thông tin sinh viên
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "NatCategories" ? "active text-primary" : "text-dark")"
+                       asp-controller="NatCategories" asp-action="NatIndex1">
+                        <i class="bi bi-journal-bookmark-fill me-1"></i> Loại sách
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

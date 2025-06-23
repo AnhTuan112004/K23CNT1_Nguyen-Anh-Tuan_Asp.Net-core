@@ -1,0 +1,88 @@
+﻿@model IEnumerable<Natlesson10.Models.Category>
+
+@{
+    ViewData["Title"] = "Danh sách danh mục";
+
+    var totalCategories = Model.Count();
+    var totalBooks = Model.Sum(c => c.Books?.Count ?? 0);
+    var firstName = Model.FirstOrDefault()?.CategoryName ?? "Không có";
+    var lastName = Model.LastOrDefault()?.CategoryName ?? "Không có";
+
+    var currentPage = (int)(ViewData["CurrentPage"] ?? 1);
+    var totalPages = (int)(ViewData["TotalPages"] ?? 1);
+    var currentFilter = ViewData["CurrentFilter"] as string ?? "";
+    var currentSort = ViewData["CurrentSort"] as string ?? "";
+    var nameSort = ViewData["NameSort"] as string ?? "";
+    var countSort = ViewData["CountSort"] as string ?? "";
+}
+
+<h1 class="mt-3">@ViewData["Title"]</h1>
+
+<form method="get" class="mb-3">
+    <div class="input-group">
+        <input type="text" name="searchString" value="@currentFilter" class="form-control" placeholder="Tìm theo tên danh mục..." />
+        <input type="hidden" name="sortOrder" value="@currentSort" />
+        <button type="submit" class="btn btn-outline-primary">Tìm</button>
+    </div>
+</form>
+
+<div class="alert alert-info">
+    <p><strong>Tổng số loại sách:</strong> @totalCategories</p>
+    <p><strong>Tổng số sách đang có:</strong> @totalBooks</p>
+    <p><strong>Tên danh mục đầu tiên:</strong> @firstName</p>
+    <p><strong>Tên danh mục cuối cùng:</strong> @lastName</p>
+</div>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Thêm danh mục mới</a>
+</p>
+
+<table class="table table-bordered table-striped">
+    <thead class="table-light">
+        <tr>
+            <th>
+                <a asp-action="NatIndex1"
+                   asp-route-searchString="@currentFilter"
+                   asp-route-sortOrder="@nameSort">Tên danh mục</a>
+            </th>
+            <th>
+                <a asp-action="NatIndex1"
+                   asp-route-searchString="@currentFilter"
+                   asp-route-sortOrder="@countSort">Số lượng sách</a>
+            </th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.CategoryName</td>
+                <td>@(item.Books?.Count ?? 0)</td>
+                <td>
+                    <a asp-action="Edit" asp-route-natId="@item.CategoryId" class="btn btn-sm btn-warning">Sửa</a>
+                    <a asp-action="Details" asp-route-natId="@item.CategoryId" class="btn btn-sm btn-info">Chi tiết</a>
+                    <a asp-action="Delete" asp-route-natId="@item.CategoryId" class="btn btn-sm btn-danger">Xoá</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@if (totalPages > 1)
+{
+    <nav>
+        <ul class="pagination">
+            @for (int i = 1; i <= totalPages; i++)
+            {
+                <li class="page-item @(i == currentPage ? "active" : "")">
+                    <a class="page-link"
+                       asp-action="NatIndex1"
+                       asp-route-page="@i"
+                       asp-route-searchString="@currentFilter"
+                       asp-route-sortOrder="@currentSort">@i</a>
+                </li>
+            }
+        </ul>
+    </nav>
+}
