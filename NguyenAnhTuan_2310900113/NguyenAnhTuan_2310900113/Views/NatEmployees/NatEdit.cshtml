@@ -1,0 +1,70 @@
+﻿@model NguyenAnhTuan_2310900113.Models.NatEmployee
+
+@{
+    ViewData["Title"] = "Cập nhật sinh viên";
+}
+
+<div class="container mt-4">
+    <h2 class="text-warning mb-3">
+        <i class="bi bi-pencil-square me-2"></i> @ViewData["Title"]
+    </h2>
+    <hr />
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form asp-action="NatEdit" method="post">
+                <input type="hidden" asp-for="NatEmpId" />
+
+                <!-- Họ tên -->
+                <div class="mb-3">
+                    <label asp-for="NatEmpName" class="form-label">Họ tên</label>
+                    <input asp-for="NatEmpName" class="form-control" placeholder="Nhập họ tên..." />
+                    <span asp-validation-for="NatEmpName" class="text-danger"></span>
+                </div>
+
+                <!-- Trình độ -->
+                <div class="mb-3">
+                    <label asp-for="NatEmpLevel" class="form-label">Trình độ</label>
+                    <select asp-for="NatEmpLevel" class="form-select">
+                        <option value="">-- Chọn trình độ --</option>
+                        <option value="Đại học">Đại học</option>
+                        <option value="Cao đẳng">Cao đẳng</option>
+                        <option value="Trung cấp">Trung cấp</option>
+                    </select>
+                    <span asp-validation-for="NatEmpLevel" class="text-danger"></span>
+                </div>
+
+                <!-- Ngày bắt đầu -->
+                <div class="mb-3">
+                    <label asp-for="NatEmpStartDate" class="form-label">Ngày bắt đầu</label>
+                    <input asp-for="NatEmpStartDate" class="form-control" type="date" />
+                    <span asp-validation-for="NatEmpStartDate" class="text-danger"></span>
+                </div>
+
+                <!-- Trạng thái -->
+                <div class="form-check mb-3">
+                    <input type="checkbox" class="form-check-input" name="NatEmpStatus" id="NatEmpStatus"
+                           value="true" @(Model.NatEmpStatus == true ? "checked" : "") />
+                    <input type="hidden" name="NatEmpStatus" value="false" />
+                    <label for="NatEmpStatus" class="form-check-label">Trạng thái hoạt động</label>
+                </div>
+
+                <!-- Nút lưu -->
+                <div class="mt-3 d-flex justify-content-between">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-save me-1"></i> Lưu thay đổi
+                    </button>
+                    <a asp-action="NatIndex" class="btn btn-secondary">
+                        <i class="bi bi-arrow-left-circle"></i> Quay lại
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

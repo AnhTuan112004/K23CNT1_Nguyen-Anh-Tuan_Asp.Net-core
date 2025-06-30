@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Nguyễn Anh Tuấn - K23CNT1";
+}
+
+<div class="text-center mt-5">
+    <!-- Avatar -->
+    <img src="~/images/avatar.jpg" alt="Ảnh đại diện"
+         class="rounded-circle shadow mb-4" style="width: 140px; height: 140px; object-fit: cover;" />
+
+    <h1 class="display-5 fw-bold text-primary">
+        <i class="bi bi-book-half me-2"></i>Chào mừng bạn đến với hệ thống
+    </h1>
+
+    <p class="lead mt-4">
+        <i class="bi bi-person-fill me-1"></i>
+        <strong>Nguyễn Anh Tuấn</strong> –
+        <i class="bi bi-mortarboard-fill ms-3 me-1"></i>
+        Lớp <strong>K23CNT1</strong>
+    </p>
+
+    <hr class="w-50 mx-auto my-4" />
+
+    <p class="text-muted">
+        Hệ thống quản lý nhân viên được phát triển trong môn học
+        <strong>Lập trình Web</strong> – ASP.NET Core MVC.
+    </p>
+
+    <a asp-controller="NatEmployees" asp-action="NatIndex" class="btn btn-success btn-lg mt-3">
+        <i class="bi bi-person-lines-fill me-1"></i> Truy cập danh sách sinh viên
+    </a>
+</div>

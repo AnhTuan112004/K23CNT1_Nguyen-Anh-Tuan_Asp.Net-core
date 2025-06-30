@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Thông tin sinh viên";
+}
+
+<div class="row justify-content-center mt-5">
+    <div class="col-md-7">
+        <div class="card shadow border-info">
+            <div class="card-header bg-info text-white d-flex align-items-center">
+                <i class="bi bi-person-vcard-fill me-2 fs-5"></i>
+                <h4 class="mb-0">@ViewData["Title"]</h4>
+            </div>
+
+            <div class="card-body p-4 text-center">
+                <!-- Ảnh đại diện -->
+                <img src="~/images/avatar.jpg" alt="Ảnh đại diện"
+                     class="rounded-circle shadow mb-4" style="width: 120px; height: 120px; object-fit: cover;" />
+
+                <!-- Danh sách thông tin sinh viên -->
+                <ul class="list-group list-group-flush text-start">
+                    <li class="list-group-item d-flex align-items-center">
+                        <i class="bi bi-person-badge-fill text-info me-3 fs-5"></i>
+                        <div><strong>Mã sinh viên:</strong> 2310900113</div>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center">
+                        <i class="bi bi-person-fill text-info me-3 fs-5"></i>
+                        <div><strong>Họ và tên:</strong> Nguyễn Anh Tuấn</div>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center">
+                        <i class="bi bi-envelope-fill text-info me-3 fs-5"></i>
+                        <div><strong>Email:</strong> nguyenanhtuant647@gmail.com</div>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center">
+                        <i class="bi bi-telephone-fill text-info me-3 fs-5"></i>
+                        <div><strong>Điện thoại:</strong> 0397568858</div>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center">
+                        <i class="bi bi-mortarboard-fill text-info me-3 fs-5"></i>
+                        <div><strong>Lớp:</strong> K23CNT1</div>
+                    </li>
+                </ul>
+
+                <!-- Mã QR -->
+                <div class="mt-4">
+                    <p class="mb-2 fw-semibold"><i class="bi bi-qr-code me-2 text-info"></i>Mã QR cá nhân</p>
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?data=mailto:nguyenanhtuant647@gmail.com&size=140x140"
+                         alt="QR cá nhân" class="border shadow rounded p-1 bg-white" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

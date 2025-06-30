@@ -1,0 +1,126 @@
+﻿@model List<NguyenAnhTuan_2310900113.Models.NatEmployee>
+
+@{
+    ViewData["Title"] = "Danh sách sinh viên";
+
+    var currentPage = ViewBag.CurrentPage as int? ?? 1;
+    var totalPages = ViewBag.TotalPages as int? ?? 1;
+    var searchString = ViewBag.SearchString as string ?? "";
+    var levelFilter = ViewBag.LevelFilter as string ?? "";
+    var sortOrder = ViewBag.CurrentSort as string ?? "";
+}
+
+<div class="container mt-4">
+    <h2 class="text-primary mb-3"><i class="bi bi-people-fill me-2"></i> @ViewData["Title"]</h2>
+    <hr />
+
+    <!-- THÔNG BÁO THÀNH CÔNG -->
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">@TempData["Success"]</div>
+    }
+
+    <!-- FORM LỌC / TÌM KIẾM -->
+    <form method="get" class="row mb-3 g-2">
+        <div class="col-md-4">
+            <input type="text" name="searchString" class="form-control" placeholder="Tìm theo tên..." value="@searchString" />
+        </div>
+        <div class="col-md-3">
+            <select name="levelFilter" class="form-select">
+                <option value="">-- Tất cả trình độ --</option>
+                <option value="Đại học" selected="@(levelFilter == "Đại học" ? "selected" : null)">Đại học</option>
+                <option value="Cao đẳng" selected="@(levelFilter == "Cao đẳng" ? "selected" : null)">Cao đẳng</option>
+                <option value="Trung cấp" selected="@(levelFilter == "Trung cấp" ? "selected" : null)">Trung cấp</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <select name="sortOrder" class="form-select">
+                <option value="">Tên ↑</option>
+                <option value="name_desc" selected="@(sortOrder == "name_desc" ? "selected" : null)">Tên ↓</option>
+                <option value="Date" selected="@(sortOrder == "Date" ? "selected" : null)">Ngày ↑</option>
+                <option value="date_desc" selected="@(sortOrder == "date_desc" ? "selected" : null)">Ngày ↓</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <button type="submit" class="btn btn-primary w-100">
+                <i class="bi bi-funnel-fill me-1"></i> Lọc
+            </button>
+        </div>
+    </form>
+
+    <!-- NÚT THÊM -->
+    <div class="mb-3">
+        <a asp-action="NatCreate" class="btn btn-success">
+            <i class="bi bi-plus-circle me-1"></i> Thêm nhân viên
+        </a>
+    </div>
+
+    <!-- THỐNG KÊ -->
+    <div class="mb-3 text-muted">
+        <strong>Tổng:</strong> @ViewBag.TotalCount |
+        <strong>Hiển thị:</strong> @ViewBag.ShowCount |
+        <strong>Ẩn:</strong> @ViewBag.HideCount
+    </div>
+
+    <!-- DANH SÁCH -->
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark text-center">
+            <tr>
+                <th>Họ tên</th>
+                <th>Trình độ</th>
+                <th>Ngày bắt đầu</th>
+                <th>Trạng thái</th>
+                <th style="width: 160px;">Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.NatEmpName</td>
+                    <td>@item.NatEmpLevel</td>
+                    <td>
+                        @{
+                            var date = item.NatEmpStartDate;
+                            string dateStr = date.HasValue ? date.Value.ToString("dd/MM/yyyy") : "N/A";
+                            @dateStr
+                        }
+                    </td>
+                    <td>
+                        @if (item.NatEmpStatus == true)
+                        {
+                            <span class="badge bg-success">Hiển thị</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary">Ẩn</span>
+                        }
+                    </td>
+                    <td class="text-center">
+                        <a asp-action="NatEdit" asp-route-natid="@item.NatEmpId" class="btn btn-sm btn-warning me-1" title="Sửa">
+                            <i class="bi bi-pencil-square"></i>
+                        </a>
+                        <a asp-action="NatDetails" asp-route-id="@item.NatEmpId" class="btn btn-sm btn-info me-1 text-white" title="Chi tiết">
+                            <i class="bi bi-info-circle"></i>
+                        </a>
+                        <a asp-action="NatDelete" asp-route-natid="@item.NatEmpId" class="btn btn-sm btn-danger" title="Xóa">
+                            <i class="bi bi-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <!-- PHÂN TRANG -->
+    <nav aria-label="Phân trang">
+        <ul class="pagination justify-content-center">
+            @for (int i = 1; i <= totalPages; i++)
+            {
+                <li class="page-item @(i == currentPage ? "active" : "")">
+                    <a class="page-link" href="?page=@i&searchString=@searchString&levelFilter=@levelFilter&sortOrder=@sortOrder">@i</a>
+                </li>
+            }
+        </ul>
+    </nav>
+</div>

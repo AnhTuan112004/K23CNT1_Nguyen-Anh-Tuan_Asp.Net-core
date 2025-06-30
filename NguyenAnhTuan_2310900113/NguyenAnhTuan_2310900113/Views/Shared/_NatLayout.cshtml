@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CRUD quản lý nhân viên - NguyenAnhTuan_2310900113" />
+    <meta name="author" content="Nguyen Anh Tuan" />
+    <title>@ViewData["Title"] - NguyenAnhTuan_2310900113</title>
+
+    <link rel="icon" type="image/x-icon" href="~/favicon.ico" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/NguyenAnhTuan_2310900113.styles.css" asp-append-version="true" />
+</head>
+<body class="bg-light text-dark">
+    <!-- Navbar -->
+    <header>
+        <partial name="_NatNavBar" />
+    </header>
+
+    <!-- Main Content -->
+    <div class="container mt-3">
+        <!-- Success Alert -->
+        @if (TempData["Success"] != null)
+        {
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <i class="bi bi-check-circle me-2"></i>
+                @TempData["Success"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Đóng"></button>
+            </div>
+        }
+
+        <main role="main" class="pb-4">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="border-top footer text-muted mt-4 py-3 bg-white">
+        <div class="container d-flex justify-content-between">
+            <span>&copy; @DateTime.Now.Year - NguyenAnhTuan_2310900113</span>
+            <a asp-area="" asp-controller="NatHome" asp-action="Privacy" class="text-decoration-none">
+                Chính sách bảo mật
+            </a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

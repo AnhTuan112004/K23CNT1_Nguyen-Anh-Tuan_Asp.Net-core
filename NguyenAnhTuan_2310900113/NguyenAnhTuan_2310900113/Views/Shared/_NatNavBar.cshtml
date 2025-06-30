@@ -1,0 +1,45 @@
+﻿<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm mb-3">
+    <div class="container-fluid">
+        <!-- Logo / Tên project -->
+        <a class="navbar-brand fw-bold text-primary" asp-area="" asp-controller="NatHome" asp-action="NatIndex">
+            <i class="bi bi-house-fill me-1"></i> NguyenAnhTuan_2310900113
+        </a>
+
+        <!-- Nút thu gọn trên mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu chính -->
+        <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="NatHome" asp-action="NatIndex">
+                        <i class="bi bi-house-door me-1"></i> Trang chủ
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="NatHome" asp-action="NatAbout">
+                        <i class="bi bi-person-badge me-1"></i> Thông tin sinh viên
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="NatEmployees" asp-action="NatIndex">
+                        <i class="bi bi-people me-1"></i> Sinh Viên
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Ngày, QR, Avatar -->
+            <div class="d-flex align-items-center">
+                <span class="navbar-text text-muted small me-3">
+                    @DateTime.Now.ToString("dd/MM/yyyy")
+                </span>
+              
+                <img src="~/images/avatar.jpg" alt="Ảnh đại diện" title="Nguyễn Anh Tuấn"
+                     class="rounded-circle border border-primary border-2" width="40" height="40" style="object-fit:cover;" />
+            </div>
+        </div>
+    </div>
+</nav>

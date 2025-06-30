@@ -1,0 +1,53 @@
+﻿@model NguyenAnhTuan_2310900113.Models.NatEmployee
+
+@{
+    ViewData["Title"] = "Chi tiết sinh viên";
+}
+
+<div class="container mt-4">
+    <h2 class="text-info mb-3">
+        <i class="bi bi-person-vcard-fill me-2"></i> @ViewData["Title"]
+    </h2>
+    <hr />
+
+    <dl class="row">
+        <dt class="col-sm-3">Họ tên</dt>
+        <dd class="col-sm-9">@Model.NatEmpName</dd>
+
+        <dt class="col-sm-3">Trình độ</dt>
+        <dd class="col-sm-9">@Model.NatEmpLevel</dd>
+
+        <dt class="col-sm-3">Ngày bắt đầu</dt>
+        <dd class="col-sm-9">
+            @if (Model.NatEmpStartDate.HasValue)
+            {
+                @Model.NatEmpStartDate.Value.ToString("dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture)
+            }
+            else
+            {
+                <span>Không có</span>
+            }
+        </dd>
+
+        <dt class="col-sm-3">Trạng thái</dt>
+        <dd class="col-sm-9">
+            @if (Model.NatEmpStatus.GetValueOrDefault())
+            {
+                <span class="badge bg-success">Hiển thị</span>
+            }
+            else
+            {
+                <span class="badge bg-secondary">Ẩn</span>
+            }
+        </dd>
+    </dl>
+
+    <div class="mt-3">
+        <a asp-action="NatEdit" asp-route-natid="@Model.NatEmpId" class="btn btn-warning me-2">
+            <i class="bi bi-pencil-square"></i> Sửa
+        </a>
+        <a asp-action="NatIndex" class="btn btn-secondary">
+            <i class="bi bi-arrow-left-circle"></i> Quay lại danh sách
+        </a>
+    </div>
+</div>
